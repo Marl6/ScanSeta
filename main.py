@@ -1,1 +1,0 @@
-print("ejiegwapo version 4 nasad")

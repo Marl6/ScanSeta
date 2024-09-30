@@ -12,6 +12,12 @@ const Dashboard3 = ({ goBack, goNext }) => { // Include goNext in props
     setSearchTerm(e.target.value);
   };
 
+  const handleSearchSubmit = () => {
+    // Implement the search functionality here
+    console.log(`Searching for: ${searchTerm}`);
+    goNext(); // Navigate to the next page (MedInfo)
+  };
+
   return (
     <div className="dashboard">
       <div className="logo-container">
@@ -29,7 +35,7 @@ const Dashboard3 = ({ goBack, goNext }) => { // Include goNext in props
             value={searchTerm} 
             onChange={handleSearchChange} 
           />
-          <button className="search-button" onClick={goNext}> {/* Use goNext to navigate to MedInfo */}
+          <button className="search-button" onClick={handleSearchSubmit}>
             <img src={searchIcon} alt="Search" className="search-icon" />
           </button>
         </div>

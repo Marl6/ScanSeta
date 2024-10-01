@@ -1,4 +1,5 @@
-/* src/components/css/dashboard1.css */
+/* src/components/css/medinfo.css */
+
 .dashboard {
     display: flex;
     flex-direction: column;
@@ -14,91 +15,42 @@
 
 .header {
     position: absolute;
-    top: 23px;
-    left: 30.5px;
+    top: 20px; /* Adjust position if needed */
+    left: 20px; /* Change from right to left */
+}
+
+.back-button {
+    background-color: #32B8CA; /* Background color */
+    border: none; /* No border */
+    border-radius: 50%; /* Circular shape */
+    width: 10vw; /* Responsive width */
+    height: 10vw; /* Responsive height */
+    max-width: 50px; /* Maximum width */
+    max-height: 50px; /* Maximum height */
     display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 250px; /* Increase the width to make the logo larger */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Adjust spacing between logo and text */
-}
-
-.dashboard h1 {
-    font-size: 4vw; /* Responsive font size */
-    color: #0277bd;
-    margin: 0;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    margin-top: 0vh;
-}
-
-/* src/components/css/dashboard1.css */
-.buttons button {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1vw;
-    font-size: 1.5vw; /* Responsive font size */
-    cursor: pointer;
-    border: none;
-    border-radius: 20px;
-    background-color: #32B8CA;
-    color: white;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    width: 350px; /* Fixed width for buttons */
-    height: 250px; /* Fixed height for buttons */
-    box-shadow: 8px 8px 25px 1px rgba(0, 0, 0, 0.3); /* Box shadow */
+    position: absolute; /* Position it absolutely */
+    top: 2vw; /* Responsive distance from the top */
+    left: 2vw; /* Responsive distance from the left */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.button-image {
-    width: 100px; /* Adjust image size as needed */
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 10px;
+.back-icon {
+    width: 60%; /* Adjust size to fit inside the button */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.buttons h2 {
-    font-size: 2vw; /* Responsive font size */
-    margin: 5px 0;
-}
-
-.buttons p {
-    font-size: 1vw; /* Responsive font size */
-    margin: 0;
+/* Optional: Add hover effect */
+.back-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
-    .dashboard h1 {
-        font-size: 6vw; /* Increase font size for smaller screens */
-    }
-
-    .buttons button {
-        padding: 3vw;
-        font-size: 4vw; /* Increase font size for buttons */
-        width: 150px; /* Adjust width for smaller screens */
-        height: 200px; /* Adjust height for smaller screens */
-    }
-
-    .button-image {
-        width: 80px; /* Adjust image size for smaller screens */
-        height: 80px;
-    }
-
-    .buttons h2 {
-        font-size: 4vw; /* Increase font size for title */
-    }
-
-    .buttons p {
-        font-size: 3vw; /* Increase font size for subtitle */
+    .back-button {
+        width: 12vw; /* Adjust size for smaller screens */
+        height: 12vw; /* Adjust size for smaller screens */
     }
 }

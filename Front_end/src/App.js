@@ -23,7 +23,7 @@ function App() {
       )}
       {currentDashboard === 2 && <Dashboard2 goNext={goToDashboard3} goBack={goToDashboard1} />}
       {currentDashboard === 3 && <Dashboard3 goBack={goToDashboard1} goNext={goToMedInfo} />}
-      {currentDashboard === 4 && <MedInfo goBack={goToDashboard3} />}
+      {currentDashboard === 4 && <MedInfo goToDashboard3={goToDashboard3} />}
     </div>
   );
 }
